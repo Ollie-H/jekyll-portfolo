@@ -1,0 +1,71 @@
+@import "compass";
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+
+@include global-reset;
+
+*{
+	@include box-sizing(border-box);
+}
+
+@import '_vars'; 
+
+html{
+	font-size: $base-font-size;
+}
+
+body{
+	font: helvetica;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* Typography */
+
+p {margin-bottom: 2em; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+.article p+p {text-indent: 1.5rem; margin-top:-2rem;}
+.article p img{margin:4rem 0;}
+
+p+p.pull, p+p.flush{margin-top: 0; margin-bottom: 4rem;}
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+h1 {
+	@include rem(font-size, 5);
+}
+
+h2, h3, h4, h5 { 
+	font-size: 1.667rem;
+	line-height: 1.3rem;
+	margin-bottom: 0.15rem;
+	color: #3a3a3a;
+	font-weight: normal;
+}
+
+h5{font-size: 1.375em;}
+h6{font-size:1em; font-weight:700;}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0;}
+h2 a.article_title {color: #3a3a3a;}
+h2 a.article_title:hover{color: #EE4938;}
+::-moz-selection{ background: #EE4938; color:#fff; text-shadow: none; }
+::selection { background: #EE4938; color:#fff; text-shadow: none; } 
+
+/* Main styles */
+
+.banner{
+	position: fixed;
+	top:0;right:0;
+	bottom:0;left:0;
+	background: url("../img/home_bg.jpg");
+	background-size: cover;
+		&:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.3);
+		}
+}

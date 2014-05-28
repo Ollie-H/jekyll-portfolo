@@ -1,0 +1,16 @@
+@mixin rem($attr, $x){
+	#{$attr}: #{$x*10}px;
+	#{$attr}: #{$x}rem;
+}
+
+@mixin center(){
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+$base-font-size: 10px;
+
+$anchor-colour: #2F6260;

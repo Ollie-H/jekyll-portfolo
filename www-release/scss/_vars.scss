@@ -1,0 +1,6 @@
+@mixin rem($attr, $x){
+	#{$attr}: #{$x*10}px;
+	#{$attr}: #{$x}rem;
+}
+
+$base-font-size: 10px;

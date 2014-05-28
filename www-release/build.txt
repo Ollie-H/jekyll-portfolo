@@ -1,0 +1,14 @@
+
+css/style.css
+----------------
+css/style.css
+
+js/common.js
+----------------
+js/common.js
+js/vendor/jquery.js
+js/vendor/underscore.js
+
+js/app/home.js
+----------------
+js/app/home.js
